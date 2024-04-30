@@ -1,7 +1,7 @@
----
+\---
 title: home
 layout: default
----
+\---
 
 # Announcement
 
