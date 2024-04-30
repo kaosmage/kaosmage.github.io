@@ -1,9 +1,4 @@
-\---
-title: home
-layout: default
-\---
-
-# Announcement
+# Home
 
 My little corner is under some construction, so things might get shuffled a bit as I keep tinkering. 
 
