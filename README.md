@@ -1,5 +1,6 @@
 ---
-title: Home
+title: home
+layout: default
 ---
 
 # Announcement
