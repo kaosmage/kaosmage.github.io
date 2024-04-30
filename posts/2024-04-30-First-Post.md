@@ -2,7 +2,7 @@
 layout: post
 title: First post
 category: update
-tags: technology, blathering
+tags: technology blathering
 ---
 
 # First post
