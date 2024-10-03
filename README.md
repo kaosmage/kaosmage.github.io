@@ -1,10 +1,5 @@
-# Home
+# Under construction
 
-My little corner is under some construction, so things might get shuffled a bit as I keep tinkering. 
+Please check back soon! 
 
-# Recent posts
-
-* [First Post](/posts/2024-04-30-First-Post.md) on 4/30/2024
-
-
-[Archive](archive.md)
+<link rel="me" href="https://social.vivaldi.net/@wdsouth>" /> 
