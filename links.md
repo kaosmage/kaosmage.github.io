@@ -2,7 +2,7 @@
 
 # Socials
 
-[Akko WTF]([https://akko.wtf/goblinses])
+[Akko WTF](https://akko.wtf/goblinses)
 
 [Blorbo Social](http://blorbo.social/@kaosmage)
 
