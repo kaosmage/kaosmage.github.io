@@ -2,8 +2,8 @@
 
 # Socials
 
-[https://akko.wtf/goblinses](Akkoma)
+[Akko WTF]([https://akko.wtf/goblinses])
 
-[https://blorbo.social](Blorbo Social)
+[Blorbo Social](http://blorbo.social/@kaosmage)
 
-[https://mastodon.social/@freejughead](Mastodon Social)
+[Mastodon Social](https://mastodon.social/@freejughead)
