@@ -1,8 +1,11 @@
 <link rel="me" href="https://blorbo.social/@kaosmage"> 
+<!--Begin body-->
+<div class="body" style="width:75%">
 # Under construction
 
 Please check back soon! 
 
+<!--Begin Sidebar-->
+<div class="sidebar" style="width:25%">
 [Links](links.md)
-
-Keyoxide: aspe:keyoxide.org:TB5Q2PDRI37D6ZYEHHYMFI257Y
+</div>
