@@ -1,0 +1,10 @@
+.sidebar {
+    width:10%;
+    float:left;
+    color:#00AA00;
+}
+.content {
+    width:75%;
+    float:right;
+    color:#00AA00;
+}
