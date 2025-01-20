@@ -3,7 +3,8 @@
 <div class="body" style="width:75%">
 # Under construction
 
-Please check back soon! 
+Please check back soon!
+</div>
 
 <!--Begin Sidebar-->
 <div class="sidebar" style="width:25%">
