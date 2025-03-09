@@ -29,3 +29,7 @@ table {
     border-color:#003300;
     width:65%;
 }
+
+@media only screen and (max-width: 600px) {
+    width:auto;
+}
