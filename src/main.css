@@ -23,3 +23,9 @@ h2 {
     text-align:center;
     font-family:Courier New;
 }
+
+table {
+    color:#00AA00;
+    border-color:#003300;
+    width:65%;
+}
