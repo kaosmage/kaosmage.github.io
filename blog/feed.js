@@ -1,39 +1,45 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const feedContainer = document.getElementById('feed-container');
-    const tumblrBlogUrl = 'https://www.tumblr.com/kaosmage-writes';  // The URL you want to fetch
+// feed.js
+document.addEventListener('DOMContentLoaded', function () {
+    // URL of the Tumblr RSS feed
+    const feedUrl = 'https://kaosmage-writes.tumblr.com/rss';
 
-    // Use CORS Anywhere to bypass CORS restrictions
-    const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+    // Function to fetch and parse the RSS feed
+    function fetchRSSFeed() {
+        fetch(feedUrl)
+        .then(response => response.text()) // Retrieve as text
+        .then(str => (new window.DOMParser()).parseFromString(str, "text/xml")) // Parse the RSS XML
+        .then(data => displayFeed(data)) // Call function to handle the feed
+        .catch(error => console.error('Error fetching the RSS feed:', error)); // Error handling
+    }
 
-    // Construct the full URL
-    const fetchUrl = proxyUrl + tumblrBlogUrl;
+    // Function to display the RSS feed on the page
+    function displayFeed(xml) {
+        const items = xml.querySelectorAll('item'); // Get all the <item> elements
+        const feedContainer = document.getElementById('feed-container'); // Where to display the feed
 
-    // Fetch the HTML content of the Tumblr blog
-    fetch(fetchUrl)
-    .then(response => response.text())
-    .then(data => {
-        // Here you can parse the HTML content and extract the data you need.
-        // For example, you can extract the blog posts from the HTML content.
+        // Clear any previous content
+        feedContainer.innerHTML = '';
 
-        // Let's search for blog post titles using a regex or DOM parsing.
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(data, 'text/html');
+        items.forEach(item => {
+            const title = item.querySelector('title').textContent; // Get title of the post
+            const link = item.querySelector('link').textContent; // Get link to the post
+            const description = item.querySelector('description').textContent; // Get description (or summary)
 
-        // Example: Extract all post titles (this is a simple example; adjust based on the structure of Tumblr's HTML)
-        const postTitles = doc.querySelectorAll('.post .post-title'); // Update with the actual class name or structure from Tumblr's HTML
-        postTitles.forEach(title => {
-            const postElement = document.createElement('div');
-            postElement.classList.add('post');
+        // Create a new div for each feed item
+        const feedItem = document.createElement('div');
+        feedItem.classList.add('feed-item');
 
-            const postTitle = document.createElement('h2');
-            postTitle.innerHTML = title.textContent || 'Untitled';
-            postElement.appendChild(postTitle);
+        // Add the feed content
+        feedItem.innerHTML = `
+        <h3><a href="${link}" target="_blank">${title}</a></h3>
+        <p>${description}</p>
+        `;
 
-            feedContainer.appendChild(postElement);
+        // Append to the container
+        feedContainer.appendChild(feedItem);
         });
-    })
-    .catch(error => {
-        console.error('Error fetching Tumblr blog:', error);
-        feedContainer.innerHTML = 'Failed to load blog content.';
-    });
+    }
+
+    // Call the fetch function
+    fetchRSSFeed();
 });
