@@ -1,4 +1,4 @@
-body{
+body {
     background-color:#000000;
 }
 .sidebar {
@@ -10,4 +10,16 @@ body{
     width:75%;
     float:right;
     color:#00AA00;
+}
+.changelog-entry {
+    border-width:5px;
+    border-style:outset;
+    border-color:#003300;
+    width:65%;
+    padding:15px;
+    font-family:Courier New;
+}
+h2 {
+    text-align:center;
+    font-family:Courier New;
 }
