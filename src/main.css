@@ -21,6 +21,7 @@ body {
     padding:15px;
     font-family:Courier New;
     margin:auto;
+    float:left;
 }
 h2 {
     text-align:center;
