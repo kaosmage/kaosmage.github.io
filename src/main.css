@@ -7,7 +7,7 @@ body {
     color:#00AA00;
 }
 .content {
-    width:75%;
+    width:70%;
     float:right;
     color:#00AA00;
 }
@@ -28,8 +28,4 @@ table {
     color:#00AA00;
     border-color:#003300;
     width:65%;
-}
-
-@media only screen and (max-width: 600px) {
-    width:auto;
 }
