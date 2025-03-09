@@ -5,6 +5,7 @@ body {
     width:10%;
     float:left;
     color:#00AA00;
+    margin:auto;
 }
 .content {
     width:70%;
@@ -19,6 +20,7 @@ body {
     width:65%;
     padding:15px;
     font-family:Courier New;
+    margin:auto;
 }
 h2 {
     text-align:center;
